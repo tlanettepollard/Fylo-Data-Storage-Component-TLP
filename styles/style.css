@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --gradient: linear-gradient(hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+    /* Neutral */
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dk-blue: hsl(228, 56%, 26%);
+    --very-dk-blue: hsl(229, 57%, 11%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid black;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
