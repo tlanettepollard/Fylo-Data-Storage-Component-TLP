@@ -16,6 +16,6 @@ function sliderChange() {
 
 
 
-$('#range-slider').on("input", function() {
+$('#slider').on("input", function() {
     $(".output").val(this.value);
 }).trigger("change");

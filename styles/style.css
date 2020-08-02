@@ -107,15 +107,14 @@ body {
 }
 
 
-.slider__container  {
+/* Slider/Input Style */
+.slider__container {
     height: 165px;
     width: 330px;
     margin-top: 25px;
+    display: flex;
+    
 }
-
-
-/* Slider/Input Style */
-
 
 
 
