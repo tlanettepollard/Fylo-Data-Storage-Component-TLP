@@ -34,3 +34,6 @@ What I learned
     Example of desc tag: ‘Bar chart showing company sales by country, in millions of dollars (US).’
 
     If your inline SVG is decorative, however, you do not need to include any of these attributes.
+
+
+https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
