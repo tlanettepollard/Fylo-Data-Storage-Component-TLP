@@ -114,15 +114,19 @@ body {
 .slider__container {
     height: 165px;
     width: 330px;
-    margin-top: 25px; 
+    margin-top: 25px;
+    border-radius: 10px; 
 }
 
 .range-output {
-
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 .range-slider input {
-    width: 100%;
+    margin-left: 20px;
+    width: 85%;
     -webkit-appearance: none;
     border-radius: 10px;
     border: 2px solid var(--very-dk-blue);
@@ -132,7 +136,7 @@ body {
 
 /* Styling Thumb of range slider */
 /* Chrome */
- .range-slider input::-webkit-slider-thumb {
+.range-slider input::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
@@ -142,8 +146,46 @@ body {
     cursor: pointer;
 }
 /* Mozilla */
+.range-slider input::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid var(--slider-thumb-border);
+    cursor: pointer;
+
+}
 
 
+.box-minmax {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.gb-tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 6px;
+    /* Width & Height */
+    max-width: 170px;
+    width: 35vw;
+    min-width: 115px;
+    height: 60px;
+
+    background: #ffffff;
+    top: 70%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+
+    
+}
 
 
 /* Footer */
