@@ -10,6 +10,9 @@
     --grayish-blue: hsl(229, 7%, 55%);
     --dk-blue: hsl(228, 56%, 26%);
     --very-dk-blue: hsl(229, 57%, 11%);
+
+    --slider-thumb-border;
+    hsl(249, 100%, 65%); 
 }
 
 * {
@@ -111,10 +114,34 @@ body {
 .slider__container {
     height: 165px;
     width: 330px;
-    margin-top: 25px;
-    display: flex;
-    
+    margin-top: 25px; 
 }
+
+.range-output {
+
+}
+
+.range-slider input {
+    width: 100%;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    border: 2px solid var(--very-dk-blue);
+    outline: none;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 80%, hsl(229, 57%, 11%) 80%, hsl(229, 57%, 11%) 100%);
+}
+
+/* Styling Thumb of range slider */
+/* Chrome */
+ .range-slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid var(--slider-thumb-border);
+    cursor: pointer;
+}
+/* Mozilla */
 
 
 
