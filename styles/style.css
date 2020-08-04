@@ -16,15 +16,117 @@
 }
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: 1px solid black;
 }
 
+*::after, *::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: var(--pale-blue);
+    background: url("../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    margin: auto;
+}
+
+/* Fylo Container Styling */
+
+.fylo__container, .gigb__container {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    background-color: var(--dk-blue);
+}
+
+.fylo__container {
+    height: 205px;
+    width: 330px;
+    justify-content: space-around;
+    border-radius: 10px 100px 10px 10px;
+    border: 1px solid var(--very-dk-blue);
+    margin-top: 50px;
+}
+
+.fylo__container .logo {
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.icon-container {
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--very-dk-blue);
+    height: 50px;
+    width: 52px;
+    border-radius: 5px;
+}
+.icon-wrapper:nth-child(2) {
+    margin-left: 1em;
+}
+.icon-wrapper:nth-child(3) {
+    margin-left: 1em;
+}
+
+.icon-wrapper .icon1, .icon2, .icon3 {
+    margin: auto;
+    
+}
+
+/* Gigb Container Styling */
+.gigb__container {
+    height: 165px;
+    width: 330px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
 
 /* Footer */
 footer {
