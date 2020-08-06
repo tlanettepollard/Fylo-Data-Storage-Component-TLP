@@ -105,7 +105,7 @@ body {
     align-items: center;
     background-color: var(--very-dk-blue);
     height: 50px;
-    width: 52px;
+    width: 50px;
     border-radius: 5px;
 }
 .icon-wrapper:nth-child(2) {
@@ -130,7 +130,11 @@ body {
 .gigb-output {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.gigb-text {
+    font-size: 0.85em;
 }
 
 .range-slider {
@@ -140,13 +144,13 @@ body {
 
 input[type=range] {
     -webkit-appearance: none;
-    width: 80%;
+    width: 85%;
     border-radius: 10px;
     outline: none;
     background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 80%, #0c122c 80%, #0c122c 100%);
     margin: auto;
 }
-/* Chrome */
+/* Chrome -- Thumb Styles */
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: 1px solid var(--slider-thumb-border);
@@ -158,8 +162,76 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
+/* Mozilla, Firefox -- Thumb Styles */
+input[type=range]::-moz-range-thumb {
+    border: 1px solid var(--slider-thumb-border);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid var(--slider-thumb-border);
+    cursor: pointer;
+}
 
+/* IE -- Thumb Styles */
+input[type=range]::-ms-thumb {
+    border: 1px solid var(--slider-thumb-border);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid var(--slider-thumb-border);
+    cursor: pointer;
+}
 
+.box-minmax {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#val-left {
+    padding-left: 30px;
+    font-size: 0.85em;
+}
+
+#val-right {
+    padding-right: 30px;
+    font-size: 0.85em;
+}
+
+.gb-tooltip {
+    position: absolute;
+    bottom: 60px;
+    right: 25%;
+}
+
+.tooltip-bubble {
+    border-radius: 0.6rem;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 75px;
+    background-color: #ffffff;
+    color: var(--very-dk-blue);
+}
+
+.value {
+    color: var(--very-dk-blue);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 2.2em;
+    margin-right: 10px;
+}
+
+.gb-text {
+    color: var(--grayish-blue);
+    letter-spacing: 0.1rem;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
 
 /* Footer */
 footer {
