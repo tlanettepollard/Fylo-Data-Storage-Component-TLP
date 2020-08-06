@@ -1,8 +1,8 @@
-/*document.getElementById('mySlider').oninput = function() {
+document.getElementById('slider').oninput = function() {
     this.style.background = 'linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%)' + (((this.value - this.min)/(this.max - this.min) * 100)) + '%, #0c122c ' + (((this.value - this.min)/(this.max - this.min) * 100))+ '%, #0c122c 100%)'
 };
 
-let slider = document.getElementById('mySlider');
+let slider = document.getElementById('slider');
 slider.addEventListener('input', sliderChange);
 
 function sliderChange() {
@@ -12,10 +12,10 @@ function sliderChange() {
     let gigbLeft = document.getElementById('gigb-value');
     gigbLeft.innerHTML = parseInt(this.max) - parseInt(slider.value);
 }
-*/
 
 
 
+/*
 $('#slider').on("input", function() {
     $(".output").val(this.value);
-}).trigger("change");
+}).trigger("change"); */

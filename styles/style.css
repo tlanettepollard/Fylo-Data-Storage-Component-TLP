@@ -81,8 +81,10 @@ body {
 }
 
 .fylo__container {
-    height: 205px;
-    width: 330px;
+    height: 210px;
+    width: 65vw;
+    min-width: 305px;
+    max-width: 325px;
     justify-content: space-around;
     border-radius: 10px 100px 10px 10px;
     border: 1px solid var(--very-dk-blue);
@@ -90,14 +92,17 @@ body {
 }
 
 .fylo__container .logo {
+    display: block;
     margin-left: 40px;
-    margin-top: 25px;
+    margin-top: 25px; 
 }
 
 .icon-container {
-    margin-left: 35px;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 26px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .icon-wrapper {
@@ -105,7 +110,7 @@ body {
     align-items: center;
     background-color: var(--very-dk-blue);
     height: 50px;
-    width: 52px;
+    width: 50px;
     border-radius: 5px;
 }
 .icon-wrapper:nth-child(2) {
@@ -117,17 +122,128 @@ body {
 
 .icon-wrapper .icon1, .icon2, .icon3 {
     margin: auto;
-    
 }
 
 /* Gigb Container Styling */
 .gigb__container {
-    height: 165px;
-    width: 330px;
-    margin-top: 25px;
-    border-radius: 10px;
+    height: 170px;
+    width: 65vw;
+    min-width: 305px;
+    max-width: 325px;
+    margin-top: 30px;
+    border-radius: 16px;
 }
 
+.gigb-output {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gigb-text {
+    font-size: 0.85em;
+}
+
+.range-slider {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 85%;
+    border-radius: 10px;
+    outline: none;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 80%, #0c122c 80%, #0c122c 100%);
+    margin: auto;
+}
+/* Chrome -- Thumb Styles */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid var(--slider-thumb-border);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid var(--slider-thumb-border);
+    cursor: pointer;
+}
+
+/* Mozilla, Firefox -- Thumb Styles */
+input[type=range]::-moz-range-thumb {
+    border: 1px solid var(--slider-thumb-border);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid var(--slider-thumb-border);
+    cursor: pointer;
+}
+
+/* IE -- Thumb Styles */
+input[type=range]::-ms-thumb {
+    border: 1px solid var(--slider-thumb-border);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid var(--slider-thumb-border);
+    cursor: pointer;
+}
+
+.box-minmax {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#val-left {
+    padding-left: 20px;
+    font-size: 0.85em;
+}
+
+#val-right {
+    padding-right: 20px;
+    font-size: 0.85em;
+}
+
+.gb-tooltip {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 175px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tooltip-bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    color: var(--very-dk-blue);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 2.4em;
+    margin-right: 10px;
+}
+
+.gb-text {
+    color: var(--grayish-blue);
+    letter-spacing: 0.1rem;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    
+}
 
 /* Footer */
 footer {
