@@ -208,19 +208,7 @@ input[type=range]::-ms-thumb {
 }
 
 .gb-tooltip {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 175px;
-    height: 75px;
-    margin: 0 auto;
-    padding: 10px 0;
-    background-color: #ffffff;
-    border-radius: 10px;
-    text-align: center;
+    
 }
 
 .tooltip-bubble {
