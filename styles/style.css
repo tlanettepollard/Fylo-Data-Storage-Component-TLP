@@ -132,6 +132,7 @@ body {
     max-width: 325px;
     margin-top: 30px;
     border-radius: 16px;
+    position: relative;
 }
 
 .gigb-output {
@@ -208,7 +209,17 @@ input[type=range]::-ms-thumb {
 }
 
 .gb-tooltip {
-    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 90%;
+    left: 20%;
+    height:80px;
+    width: 190px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ffffff;
+
 }
 
 .tooltip-bubble {
