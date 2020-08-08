@@ -212,7 +212,7 @@ input[type=range]::-ms-thumb {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 90%;
+    top: 85%;
     left: 20%;
     height:80px;
     width: 190px;
@@ -265,9 +265,3 @@ footer {
 
 
 
-/* Media Queries */
-@media screen and (min-width: 768px) {
-    body {
-       
-    }
-}
