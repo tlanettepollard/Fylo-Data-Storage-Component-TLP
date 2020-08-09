@@ -5,35 +5,15 @@ Frontend Mentor Project
 
 
 ## My challenge
+My challenge was to build a data storage component so that it looks as close to the design as possible.
 
-Your challenge is to build out this data storage component and get it looking as close to the design as possible.
+My users should be able to:
 
-Your users should be able to:
+- View the optimal layout for the site depending on their device's screen size. Focus screen sizes were 375px (mobile) and 1440px (desktop).
 
-- View the optimal layout for the site depending on their device's screen size
+## New Information I Learned
+I did some research on using SVG tag instead of IMG tags in my HTML. I found out that I could include a <title> tag which is similar to an alt attribute we use for images. You need to place the <title> tag right below the SVG tag. You also need to include an aria-labelledby attribute that points to the <title> tag. I could also use a <desc> tag to add a longer description for users of assistive technology. I did not use the <desc> tag since my images were general icons. 
 
-
-
-
-
-
-
-What I learned
-    In the output XML for the SVG, include a title tag directly below the svg tag.
-
-    The <title> tag for an SVG should be brief, much like an alt attribute for an image.
-
-    In the SVG tag, include an aria-labelledby attribute that points to the <title> tag.
-
-    If there is more than one shape, it can be a good idea to include a title tag for each shape group.
-
-    Including a <desc> tag (description), in addition to a title tag, is very helpful for users of assistive technology.
-
-    On his site, Dudley Storey writes that ’<desc> is a longer description of the SVG element, containing its purpose or design.’
-
-    Example of desc tag: ‘Bar chart showing company sales by country, in millions of dollars (US).’
-
-    If your inline SVG is decorative, however, you do not need to include any of these attributes.
 
 
 https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
