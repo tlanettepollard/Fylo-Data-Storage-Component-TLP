@@ -1,0 +1,270 @@
+/* Desktop Media Queries */
+
+:root {
+    /* Primary */
+    --gradient: linear-gradient(hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+    /* Neutral */
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dk-blue: hsl(228, 56%, 26%);
+    --very-dk-blue: hsl(229, 57%, 11%);
+
+    --slider-thumb-border;
+    hsl(249, 100%, 65%);
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        font-family: 'Raleway',
+        sans-serif;
+        font-size: 1rem;
+        color: var(--pale-blue);
+        background-image: url("../images/bg-desktop.png");
+        background-color: var(--very-dk-blue);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        outline: 1px solid black;
+    }
+
+    *::after,
+    *::before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+
+        flex-direction: row;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: horizontal;
+        -ms-flex-direction: row;
+
+        justify-content: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+
+        align-items: flex-end;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        margin: auto;
+    }
+    .fylo__container,
+    .gigb__container {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+
+        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+
+        justify-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        background-color: var(--dk-blue);
+        margin-bottom: 300px;
+    }
+    .fylo__container {
+        height: 210px;
+        width: 75vw;
+        min-width: 305px;
+        max-width: 390px;
+        margin-left: -10px;
+        justify-content: space-around;
+        border-radius: 10px 100px 10px 10px;
+        border: 1px solid var(--very-dk-blue);
+        
+    }
+    .fylo__container .logo {
+        display: block;
+        margin-left: 40px;
+        margin-top: 25px;
+    }
+
+    .icon-container {
+        margin-top: 15px;
+        margin-left: 40px;
+        margin-bottom: 26px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .icon-wrapper {
+        display: flex;
+        align-items: center;
+        background-color: var(--very-dk-blue);
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .icon-wrapper:nth-child(2) {
+        margin-left: 1em;
+    }
+
+    .icon-wrapper:nth-child(3) {
+        margin-left: 1em;
+    }
+
+    .icon-wrapper .icon1,
+    .icon2,
+    .icon3 {
+        margin: auto;
+    }
+    .gigb__container {
+        height: 170px;
+        width: 85vw;
+        min-width: 305px;
+        max-width: 525px;
+        margin-top: 30px;
+        margin-left: 40px;
+        border-radius: 16px;
+        position: relative;
+    }
+    .gigb-output {
+        display: flex;
+        justify-content:  flex-start;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+
+    .gigb-text {
+        font-size: 0.85em;
+    }
+
+    .range-slider {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 90%;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 80%, #0c122c 80%, #0c122c 100%);
+        margin: auto;
+    }
+
+    /* Chrome -- Thumb Styles */
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: 1px solid var(--slider-thumb-border);
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: white;
+        border: 1px solid var(--slider-thumb-border);
+        cursor: pointer;
+    }
+
+    /* Mozilla, Firefox -- Thumb Styles */
+    input[type=range]::-moz-range-thumb {
+        border: 1px solid var(--slider-thumb-border);
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: white;
+        border: 1px solid var(--slider-thumb-border);
+        cursor: pointer;
+    }
+
+    /* IE -- Thumb Styles */
+    input[type=range]::-ms-thumb {
+        border: 1px solid var(--slider-thumb-border);
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: white;
+        border: 1px solid var(--slider-thumb-border);
+        cursor: pointer;
+    }
+
+    .box-minmax {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    #val-left {
+        padding-left: 20px;
+        font-size: 0.85em;
+    }
+
+    #val-right {
+        padding-right: 20px;
+        font-size: 0.85em;
+    }
+    .gb-tooltip {
+        position: absolute;
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+
+        justify-content: center;
+        top: -3em;
+        right: 2em;
+        margin: auto;
+        height: 80px;
+        width: 190px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    .tooltip-bubble {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .value {
+        color: var(--very-dk-blue);
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        font-size: 2.4em;
+        margin-right: 10px;
+    }
+
+    .gb-text {
+        color: var(--grayish-blue);
+        letter-spacing: 0.1rem;
+        font-size: 0.8em;
+        text-transform: uppercase;
+
+    }
+
+    /* Footer */
+    footer {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}
