@@ -234,20 +234,20 @@
         display: -ms-flexbox;
 
         justify-content: center;
-        -webkit-box-direction: normal;
-        -webkit-box-orient: horizontal;
-        -ms-flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
 
         top: -3em;
         right: 2em;
         margin: auto;
         height: 80px;
-        width: 190px;
+        width: 200px;
         border-radius: 10px;
         background-color: #ffffff;
     }
     .gb-tooltip .arrow {
         position: relative;
+
         display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -258,6 +258,8 @@
         -ms-flex-direction: row;
 
         align-items: flex-end;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
         
         height: 30px;
         width: 30px;
