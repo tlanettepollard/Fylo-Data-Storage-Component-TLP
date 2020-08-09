@@ -37,3 +37,5 @@ What I learned
 
 
 https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+
+Tried adding styling into separate files for mobile and for desktop
