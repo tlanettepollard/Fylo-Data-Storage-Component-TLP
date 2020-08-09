@@ -12,10 +12,8 @@ My users should be able to:
 - View the optimal layout for the site depending on their device's screen size. Focus screen sizes were 375px (mobile) and 1440px (desktop).
 
 ## New Information I Learned
-I did some research on using SVG tag instead of IMG tags in my HTML. I found out that I could include a <title> tag which is similar to an alt attribute we use for images. You need to place the <title> tag right below the SVG tag. You also need to include an aria-labelledby attribute that points to the <title> tag. I could also use a <desc> tag to add a longer description for users of assistive technology. I did not use the <desc> tag since my images were general icons. 
+I did some research on using SVG tag instead of IMG tags in my HTML. I found out that I could include a <title> tag which is similar to an alt attribute we use for images. You need to place the <title> tag right below the SVG tag. You also need to include an aria-labelledby attribute that points to the <title> tag. I could also use a description tag to add a longer description for users of assistive technology. I did not use the tag since my images were general icons. 
 
-
-
-https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+Another area I researched was styling my input range slider to be cross-browser compatible. I referred to [CSS Tricks](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/).
 
 Tried adding styling into separate files for mobile and for desktop
