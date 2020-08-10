@@ -264,6 +264,7 @@
         height: 30px;
         width: 30px;
         top: 3.5em;
+        left: -30px;
         border-left: 30px solid transparent;
         border-right: 0px solid transparent;
         border-top: 30px solid #ffffff;
