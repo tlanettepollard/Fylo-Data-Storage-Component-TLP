@@ -1,4 +1,5 @@
 /* Desktop Media Queries */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 :root {
     /* Primary */
@@ -29,7 +30,6 @@
     body {
         height: 100%;
         width: 100%;
-        position: relative;
         font-family: 'Raleway',
         sans-serif;
         font-size: 1rem;
@@ -238,33 +238,34 @@
         -ms-flex-pack: center;
 
         top: -3em;
-        right: 2em;
+        right: 3em;
         margin: auto;
         height: 80px;
-        width: 230px;
+        width: 190px;
         border-radius: 10px;
         background-color: #ffffff;
     }
     .gb-tooltip .arrow {
-        position: relative;
+        position: absolute;
 
-        display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
+        display: flex;
 
-        flex-direction: row;
         -webkit-box-direction: normal;
         -webkit-box-orient: horizontal;
         -ms-flex-direction: row;
+        flex-direction: row;
 
-        align-items: flex-end;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
         
         height: 30px;
         width: 30px;
-        top: 3.5em;
-        left: -30px;
+        top: 4.5em;
+        right: 0.01em;
+        
         border-left: 30px solid transparent;
         border-right: 0px solid transparent;
         border-top: 30px solid #ffffff;
@@ -279,17 +280,21 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
 
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+
         margin: auto;
-        padding-left: 10px;
-        width: 230px;
+        
+        /*padding-left: 10px;
+        width: 230px;*/
     }
     .value {
         color: var(--very-dk-blue);
         letter-spacing: 0.1rem;
         font-weight: 700;
-        font-size: 2.3em;
-        margin-right: 10px;
+        font-size: 2.5em;
+        margin-left: 10px;
     }
 
     .gb-text {
@@ -297,7 +302,6 @@
         letter-spacing: 0.1rem;
         font-size: 0.8em;
         text-transform: uppercase;
-
     }
 
     /* Footer */

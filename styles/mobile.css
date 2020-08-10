@@ -290,8 +290,7 @@ input[type=range]::-ms-thumb {
     color: var(--grayish-blue);
     letter-spacing: 0.1rem;
     font-size: 0.8em;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 
 /* Footer */
